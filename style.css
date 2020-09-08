@@ -1,0 +1,149 @@
+:root {
+    --primaryColor: #ff2882;
+    --primaryColorOFF: #E81A70;
+    --secondaryColor: #37003c;
+    --secondaryColorHover: #4e0055;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainLightBlue: #05f0ff;
+    --mianGreen: #02894e;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.2s linear;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: 'Baloo Tamma 2',sans-serif;
+  }
+.game{
+    height: 100vh;
+    background-color: var(--secondaryColor);
+    padding-top: 40px;
+}
+  .game__board{
+      display: flex;
+      justify-content: center;
+  }
+
+  .game__tile-container{
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      grid-template-rows: repeat(5, 80px);
+      justify-content: center;
+      border: 4px solid var(--primaryColor);
+  }
+
+  .game__tile-item{
+    background: var(--secondaryColor) url(images/Premier-League-logo-50x50.png) center no-repeat;
+    border: 4px solid var(--primaryColor);
+    transition:  var(--mainTransition);
+    cursor: pointer;
+  }
+
+  .game__start{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .game__start-btn{
+      padding: 10px 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-color: var(--secondaryColor);
+      color: var(--primaryColor);
+      letter-spacing: var(--mainSpacing);
+      border: 2px solid var(--primaryColor);
+      font-size: 22px;
+      transition: var(--mainTransition);
+      outline: none;
+  }
+  .game__start-btn:hover{
+      background-color: var(--primaryColor);
+      color: var(--secondaryColor);
+  }
+
+
+@media screen and (min-width: 769px){
+    .game__tile-container{
+        grid-template-columns: repeat(5, 120px);
+        grid-template-rows: repeat(4, 120px);
+    }
+    .game__tile-item--hidden:hover{
+        background: var(--secondaryColorHover) url(images/Premier-League-logo-50x50.png) center no-repeat;
+    }
+}
+
+.ars{
+    background: var(--secondaryColor) url(images/logo-ars.png) center/60% no-repeat;
+}
+.avl{
+    background: var(--secondaryColor) url(images/logo-avl.png) center/60% no-repeat;
+}
+.bha{
+    background: var(--secondaryColor) url(images/logo-bha.png) center/60% no-repeat;
+}
+.bur{
+    background: var(--secondaryColor) url(images/logo-bur.png) center/60% no-repeat;
+}
+.che{
+    background: var(--secondaryColor) url(images/logo-che.png) center/60% no-repeat;
+}
+.cry{
+    background: var(--secondaryColor) url(images/logo-cry.png) center/60% no-repeat;
+}
+.eve{
+    background: var(--secondaryColor) url(images/logo-eve.png) center/60% no-repeat;
+}
+.ful{
+    background: var(--secondaryColor) url(images/logo-ful.png) center/60% no-repeat;
+}
+.lee{
+    background: var(--secondaryColor) url(images/logo-lee.png) center/60% no-repeat;
+}
+.lei{
+    background: var(--secondaryColor) url(images/logo-lei.png) center/60% no-repeat;
+}
+.liv{
+    background: var(--secondaryColor) url(images/logo-liv.png) center/60% no-repeat;
+}
+.mci{
+    background: var(--secondaryColor) url(images/logo-mci.png) center/60% no-repeat;
+}
+.mun{
+    background: var(--secondaryColor) url(images/logo-mun.png) center/60% no-repeat;
+}
+.new{
+    background: var(--secondaryColor) url(images/logo-new.png) center/60% no-repeat;
+}
+.shu{
+    background: var(--secondaryColor) url(images/logo-shu.png) center/60% no-repeat;
+}
+.sou{
+    background: var(--secondaryColor) url(images/logo-sou.png) center/60% no-repeat;
+}
+.tot{
+    background: var(--secondaryColor) url(images/logo-tot.png) center/60% no-repeat;
+}
+.wba{
+    background: var(--secondaryColor) url(images/logo-wba.png) center/60% no-repeat;
+}
+.whu{
+    background: var(--secondaryColor) url(images/logo-whu.png) center/60% no-repeat;
+}
+.wol{
+    background: var(--secondaryColor) url(images/logo-wol.png) center/60% no-repeat;
+}
+
+.game__tile-item--hidden{
+    background: var(--secondaryColor) url(images/Premier-League-logo-50x50.png) center no-repeat;
+}
+.game__tile-item--off{
+    background: var(--primaryColorOFF);
+}
+
+
