@@ -8,7 +8,7 @@
     --mainLightBlue: #05f0ff;
     --mianGreen: #02894e;
     --mainSpacing: 0.1rem;
-    --mainTransition: all 0.2s linear;
+    --mainTransition: all 0.1s linear;
   }
   * {
     margin: 0;
@@ -79,64 +79,64 @@
 }
 
 .ars{
-    background: var(--secondaryColor) url(images/logo-ars.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-ars.png) center/50%  no-repeat;
 }
 .avl{
-    background: var(--secondaryColor) url(images/logo-avl.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-avl.png) center/50%  no-repeat;
 }
 .bha{
-    background: var(--secondaryColor) url(images/logo-bha.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-bha.png) center/50%  no-repeat;
 }
 .bur{
-    background: var(--secondaryColor) url(images/logo-bur.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-bur.png) center/50%  no-repeat;
 }
 .che{
-    background: var(--secondaryColor) url(images/logo-che.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-che.png) center/50%  no-repeat;
 }
 .cry{
-    background: var(--secondaryColor) url(images/logo-cry.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-cry.png) center/50%  no-repeat;
 }
 .eve{
-    background: var(--secondaryColor) url(images/logo-eve.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-eve.png) center/50%  no-repeat;
 }
 .ful{
-    background: var(--secondaryColor) url(images/logo-ful.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-ful.png) center/50%  no-repeat;
 }
 .lee{
-    background: var(--secondaryColor) url(images/logo-lee.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-lee.png) center/50%  no-repeat;
 }
 .lei{
     background: var(--secondaryColor) url(images/logo-lei.png) center/60% no-repeat;
 }
 .liv{
-    background: var(--secondaryColor) url(images/logo-liv.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-liv.png) center/50%  no-repeat;
 }
 .mci{
-    background: var(--secondaryColor) url(images/logo-mci.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-mci.png) center/50%  no-repeat;
 }
 .mun{
-    background: var(--secondaryColor) url(images/logo-mun.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-mun.png) center/50%  no-repeat;
 }
 .new{
-    background: var(--secondaryColor) url(images/logo-new.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-new.png) center/50%  no-repeat;
 }
 .shu{
-    background: var(--secondaryColor) url(images/logo-shu.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-shu.png) center/50%  no-repeat;
 }
 .sou{
-    background: var(--secondaryColor) url(images/logo-sou.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-sou.png) center/50%  no-repeat;
 }
 .tot{
-    background: var(--secondaryColor) url(images/logo-tot.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-tot.png) center/50%  no-repeat;
 }
 .wba{
-    background: var(--secondaryColor) url(images/logo-wba.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-wba.png) center/50%  no-repeat;
 }
 .whu{
-    background: var(--secondaryColor) url(images/logo-whu.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-whu.png) center/50% no-repeat;
 }
 .wol{
-    background: var(--secondaryColor) url(images/logo-wol.png) center/60% no-repeat;
+    background: var(--secondaryColor) url(images/logo-wol.png) center/50%  no-repeat;
 }
 
 .game__tile-item--hidden{

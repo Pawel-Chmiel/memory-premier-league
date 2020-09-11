@@ -1,6 +1,14 @@
-const clubLogos = ["ars", "ars", "che", "che",
-    "eve", "eve", "lei", "lei", "liv", "liv", "mci", "mci", "mun", "mun",
-    "shu", "shu", "sou", "sou", "wol", "wol"];
+const clubLogosFirstArr = ["ars", "avl", "bha", "bur", "che",
+    "cry", "eve", "ful", "lee", "lei", "liv", "mci", "mun", "new",
+    "shu", "sou", "tot", "wba", "whu", "wol"];
+const clubLogosMainArr = [];
+
+clubLogosFirstArr.forEach(logo => {
+    const index = Math.floor(Math.random() * clubLogosFirstArr.length);
+    clubLogosFirstArr.splice(index, 1);
+    clubLogosMainArr.push(logo, logo);
+})
+
 const startGameButton = document.querySelector(".game__start");
 
 let tiles = [...document.querySelectorAll(".game__tile-item")];
@@ -12,9 +20,9 @@ const activeTilesPair = [];
 const gamePairs = tiles.length / 2;
 let gameResult = 0;
 
-
 const clickSingleTile = function () {
     activeTile = this;
+    if (activeTile === activeTilesPair[0]) return;
     activeTile.classList.remove("game__tile-item--hidden");
     if (activeTilesPair.length === 0) {
         activeTilesPair[0] = this;
@@ -30,6 +38,7 @@ const clickSingleTile = function () {
                     active.classList.add("game__tile-item--off");
                 });
                 gameResult++;
+                tiles = tiles.filter(tile => !tile.classList.contains("game__tile-item--off"));
                 if (gameResult === gamePairs) {
                     const endTime = new Date().getTime();
                     const gameTime = (endTime - startTime) / 1000;
@@ -50,6 +59,7 @@ const clickSingleTile = function () {
     }
 };
 
+
 const checkGameResult = () => {
 
 };
@@ -57,10 +67,9 @@ const checkGameResult = () => {
 
 const init = () => {
     tiles.forEach(tile => {
-        const position = Math.floor(Math.random() * clubLogos.length);
-        console.log(position);
-        tile.classList.add(clubLogos[position]);
-        clubLogos.splice(position, 1);
+        const position = Math.floor(Math.random() * clubLogosMainArr.length);
+        tile.classList.add(clubLogosMainArr[position]);
+        clubLogosMainArr.splice(position, 1);
     })
     setTimeout(() => {
         tiles.forEach(tile => {
