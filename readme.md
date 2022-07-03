@@ -7,4 +7,4 @@ A simple memory game built in JavaScript.
 - HTML,
 - CSS,
 - RWD,
-- JavaScript.
+- JavaScript ES6.
