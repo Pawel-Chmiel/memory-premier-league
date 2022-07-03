@@ -1,4 +1,4 @@
-## Hangman game - see [demo](https://pawel-chmiel.github.io/memory-premier-league/) 
+## Premier league memory game - see [demo](https://pawel-chmiel.github.io/memory-premier-league/) 
 
 ## Project Description
 A simple memory game built in JavaScript.
